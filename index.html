@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonjoon Hwang | Machine Learning Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                        accent: '#38bdf8',
+                        gold: '#fbbf24'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        
+        body {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.08), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
+        }
+        
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased selection:bg-accent selection:text-dark">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 glass border-b-0">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <span class="font-mono text-xl font-bold text-white tracking-tighter">WH<span class="text-accent">.</span>_</span>
+            <div class="space-x-8 text-sm font-medium font-mono hidden md:block">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#education" class="hover:text-accent transition">Education</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#activities" class="hover:text-accent transition">Activities</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <p class="text-accent font-mono mb-4">Hi, my name is</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
+                    Wonjoon Hwang.
+                </h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-6 h-16">
+                    I build <span id="typewriter" class="text-white typing-cursor"></span>
+                </h2>
+                <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
+                    I am a <strong>Machine Learning Engineer</strong> bridging the gap between <span class="text-accent">Research</span> and <span class="text-accent">Production</span>.
+                    Currently pursuing an MS in Data Science at the <strong>University of Washington</strong>, I focus on building scalable deep learning systems and optimizing distributed training pipelines.
+                    I turn complex data into deployable, high-impact solutions.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" class="px-8 py-4 bg-accent/10 border border-accent text-accent rounded hover:bg-accent hover:text-dark transition font-mono font-bold">
+                        View Projects
+                    </a>
+                    <a href="https://github.com/whwan4570" target="_blank" class="px-6 py-4 text-2xl text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/wonjoon-hwang-0496ba277" target="_blank" class="px-6 py-4 text-2xl text-slate-400 hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="order-1 md:order-2 flex justify-center relative">
+                <div class="absolute inset-0 bg-accent/20 blur-3xl rounded-full transform scale-75"></div>
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-slate-700 p-2 glass">
+                    <img src="C:\Users\FLEXBOY\Downloads\profile.jpg" alt="Wonjoon Hwang" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-6 bg-dark/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-accent font-mono text-xl">01.</span>
+                <h2 class="text-3xl font-bold text-white">Education</h2>
+                <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+            </div>
+
+            <div class="grid gap-6">
+                <div class="glass p-8 rounded-xl border-l-4 border-accent flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-800/50 transition">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">University of Washington</h3>
+                        <p class="text-accent font-medium mt-1">Master of Science in Data Science</p>
+                        <p class="text-slate-500 text-sm mt-2"><i class="fas fa-map-marker-alt mr-2"></i>Seattle, WA</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 text-right">
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm font-mono text-slate-300">Expected Mar 2027</span>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-xl border-l-4 border-slate-600 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-800/50 transition">
+                    <div class="w-full">
+                        <div class="flex justify-between items-start w-full">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-200">University of Georgia</h3>
+                                <p class="text-slate-400 font-medium mt-1">B.S. in Data Science</p>
+                                <p class="text-slate-500 text-sm mt-1">Minors: Statistics & Computer Science</p>
+                            </div>
+                            <span class="bg-slate-800 px-3 py-1 rounded text-sm font-mono text-slate-400 hidden md:block">May 2025</span>
+                        </div>
+                        
+                        <div class="mt-4 flex flex-wrap gap-3 items-center">
+                            <span class="bg-slate-700/50 border border-slate-600 px-3 py-1.5 rounded text-sm text-slate-300 font-mono">
+                                GPA: 3.68
+                            </span>
+                            <div class="flex items-center bg-yellow-500/10 border border-yellow-500/40 px-3 py-1.5 rounded">
+                                <i class="fas fa-crown text-gold mr-2 text-sm"></i>
+                                <div>
+                                    <span class="text-gold font-bold text-sm block">Dean's List Honoree</span>
+                                    <span class="text-gold/80 text-xs block">Spring/Fall 2023, Spring 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-accent font-mono text-xl">02.</span>
+                <h2 class="text-3xl font-bold text-white">Research Experience</h2>
+                <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+            </div>
+
+            <div class="relative border-l-2 border-slate-700 pl-8 ml-4 space-y-8">
+                <div class="relative group">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-dark border-2 border-accent rounded-full group-hover:bg-accent transition duration-300"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-accent transition">Research Assistant</h3>
+                        <span class="font-mono text-sm text-slate-400">Fall 2023</span>
+                    </div>
+                    <h4 class="text-lg text-accent font-medium mb-4">University of Georgia</h4>
+                    <div class="bg-card/50 p-6 rounded-lg border border-slate-700 hover:border-slate-600 transition">
+                        <ul class="space-y-4 text-slate-400 text-sm leading-relaxed">
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-accent mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Conducted <strong>Federated Learning research</strong> focusing on FedSVD, FedPower, and Gradient Decision Trees algorithms.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-accent mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Designed and implemented prototype ML models in <strong>Python</strong> to benchmark performance against state-of-the-art baselines.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6 bg-dark/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <span class="text-accent font-mono text-xl">03.</span>
+                <h2 class="text-3xl font-bold text-white">Featured Projects</h2>
+                <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-file-alt"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="#" class="hover:text-accent"><i class="fas fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">Addressing Class Imbalance (SRCNN)</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Coursework Research. Investigated the impact of <strong>Super-Resolution (SRCNN)</strong> and Wavelet Transforms on ResNet50 & GoogLeNet performance for imbalanced sports image datasets.
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Computer Vision</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="https://watchdawg-app.onrender.com/" target="_blank" class="hover:text-accent" title="Live Dashboard"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data" target="_blank" class="hover:text-accent" title="Data Source"><i class="fas fa-database"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">WatchDawg Crime Analytics</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Interactive dashboard visualizing Seattle crime data using <strong>Dash</strong> and <strong>SQLite</strong>. Engineered a memory-optimized data pipeline with comprehensive cleaning protocols and real-time geospatial analysis.
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Python</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Dash</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-palette"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="#" class="hover:text-accent"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">Best Artworks of All Time</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Built custom and <strong>Transfer Learning CNN models</strong> (TensorFlow/Keras) to classify paintings by artists’ styles. Achieved <strong>~80% accuracy</strong> (20% improvement over baseline).
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">TensorFlow</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">CNN</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Transfer Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-football-ball"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="#" class="hover:text-accent"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">NFL Big Data Bowl 2026</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Benchmarking <span class="text-accent">PyTorch vs TensorFlow</span> training dynamics. Analyzed optimization variance and convergence behavior for player-tracking sequence models.
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Deep Learning</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-chart-line"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="#" class="hover:text-accent"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">Housing Market Modeling</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            <strong>2020 Corona Bubble vs. 2007 Subprime Crisis.</strong> Applied <span class="text-white">PCA</span> for dimensionality reduction and predictive analytics on economic volatility.
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Data Mining</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">PCA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-wine-glass-alt"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="#" class="hover:text-accent"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">Traits & Tastes</h3>
+                        <p class="text-accent font-mono text-xs mb-3">"Traits Flows, Tastes Shows"</p>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Full-stack recommendation engine using <strong>React.js</strong> and <strong>MySQL</strong>. Built a preference-based filtering system to increase user engagement.
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Full Stack</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">React</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <span class="text-accent font-mono text-xl">04.</span>
+                <h2 class="text-3xl font-bold text-white">Certifications & Activities</h2>
+                <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-accent/50 transition">
+                    <div class="bg-slate-800 p-3 rounded-lg text-accent text-2xl">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Google Data Analytics Professional Certificate</h3>
+                        <p class="text-slate-500 text-sm mb-2">Coursera | Fall 2023</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                            Acquired comprehensive skills in data cleaning, problem solving, and visualization. Mastered tools including <strong>SQL, Tableau, and R</strong>.
+                        </p>
+                        <a href="#" class="text-xs text-accent font-mono hover:underline">View Credential <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-accent/50 transition">
+                    <div class="bg-slate-800 p-3 rounded-lg text-secondary text-2xl">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">UGA Hacks 8</h3>
+                        <p class="text-slate-500 text-sm mb-2">Hackathon Participant | Spring 2023</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Collaborated in a <strong>48-hour coding marathon</strong> to develop a travel-related software prototype. Engaged with the CS community to solve real-world problems under tight deadlines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 text-center bg-dark text-slate-500 text-sm font-mono">
+        <h2 class="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+        <p class="mb-8 max-w-md mx-auto">
+            I'm currently looking for new opportunities in ML Engineering. 
+            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+        
+        <button onclick="copyEmail(this)" class="group relative px-8 py-4 border border-accent text-accent rounded hover:bg-accent/10 transition font-bold outline-none focus:ring-2 focus:ring-accent/50">
+            <span id="btn-text">Say Hello (Copy Email)</span>
+            <i class="fas fa-copy ml-2 group-hover:scale-110 transition-transform"></i>
+        </button>
+
+        <p class="mt-12">Designed & Built by Wonjoon Hwang</p>
+    </footer>
+
+    <script>
+        const textElement = document.getElementById('typewriter');
+        const phrases = ["Deep Learning Models.", "Scalable Systems.", "ML Pipelines."];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(type, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? 100 : 150);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', type);
+
+        // 이메일 복사 기능
+        function copyEmail(btn) {
+            const email = "wjhwang0503@gmail.com";
+            
+            navigator.clipboard.writeText(email).then(() => {
+                const textSpan = btn.querySelector('#btn-text');
+                const icon = btn.querySelector('i');
+
+                textSpan.innerText = "Email Copied! ✅";
+                icon.className = "fas fa-check ml-2";
+                btn.classList.add("bg-accent/10");
+
+                setTimeout(() => {
+                    textSpan.innerText = "Say Hello (Copy Email)";
+                    icon.className = "fas fa-copy ml-2";
+                    btn.classList.remove("bg-accent/10");
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert("Please email me at: " + email);
+            });
+        }
+    </script>
+</body>
+</html>
