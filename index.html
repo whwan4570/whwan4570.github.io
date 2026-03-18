@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonjoon Hwang | Machine Learning Engineer</title>
+    <title>Wonjoon Hwang | ML Engineer Intern Applicant</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -72,9 +72,9 @@
                     I build <span id="typewriter" class="text-white typing-cursor"></span>
                 </h2>
                 <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
-                    I am a <strong>Machine Learning Engineer</strong> bridging the gap between <span class="text-accent">Research</span> and <span class="text-accent">Production</span>.
-                    Currently pursuing an MS in Data Science at the <strong>University of Washington</strong>, I focus on building scalable deep learning systems and optimizing distributed training pipelines.
-                    I turn complex data into deployable, high-impact solutions.
+                    I am a <strong>Machine Learning Engineer</strong> specialized in <span class="text-accent">Data Intelligence</span> and Scalable Systems.
+                    Currently pursuing an MS in Data Science at the <strong>University of Washington</strong>, I bridge the gap between advanced research and production engineering.
+                    I am eager to contribute to the <strong>Data Intelligence Team</strong> in <strong>Magok, Seoul</strong> as an ML Engineer Intern, leveraging my expertise in distributed training and deep learning.
                 </p>
                 <div class="flex gap-4">
                     <a href="#projects" class="px-8 py-4 bg-accent/10 border border-accent text-accent rounded hover:bg-accent hover:text-dark transition font-mono font-bold">
@@ -88,7 +88,7 @@
             <div class="order-1 md:order-2 flex justify-center relative">
                 <div class="absolute inset-0 bg-accent/20 blur-3xl rounded-full transform scale-75"></div>
                 <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-slate-700 p-2 glass">
-                    <img src=".\profile.jpg" alt="Wonjoon Hwang" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500">
+                    <img src="profile.jpg" alt="Wonjoon Hwang" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500">
                 </div>
             </div>
         </div>
@@ -185,6 +185,29 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-10">
+                
+                <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-accent text-4xl"><i class="fas fa-spa"></i></div>
+                            <div class="flex gap-4 text-slate-400">
+                                <a href="https://jungmoonha.github.io/Data515_SmartSkincare/smart_skincare/templates/index.html" target="_blank" class="hover:text-accent" title="Live Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition">Smart Skincare Recommendation System</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Built a full-stack personalized skincare recommendation system that matches user skin profiles with product ingredients and recommends best-fit skincare products.
+                            Designed the ingredient scoring logic, data processing pipeline, and product exploration interface to turn raw cosmetic data into actionable recommendations.
+                        </p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Full Stack</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Recommendation System</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Data Pipeline</span>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="group relative bg-card rounded-xl overflow-hidden hover:-translate-y-2 transition duration-300 border border-slate-800 hover:border-accent/50">
                     <div class="p-8">
@@ -320,6 +343,21 @@
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="glass p-8 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-accent/50 transition">
                     <div class="bg-slate-800 p-3 rounded-lg text-accent text-2xl">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">TerraCast | 1st Place, UW-Databricks Hackathon</h3>
+                        <p class="text-slate-500 text-sm mb-2">Hackathon Winner</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                            Won 1st place by developing TerraCast, an end-to-end yield intelligence system that predicts crop yield from weather data and identifies yield anomalies.
+                            Integrated large-scale weather and crop datasets in Databricks, engineered climate features, and built predictive models to surface key drivers of yield fluctuation.
+                        </p>
+                        <a href="https://devpost.com/software/terracast#software_1208867" target="_blank" class="text-xs text-accent font-mono hover:underline">View Project <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-accent/50 transition">
+                    <div class="bg-slate-800 p-3 rounded-lg text-accent text-2xl">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <div>
@@ -365,7 +403,7 @@
 
     <script>
         const textElement = document.getElementById('typewriter');
-        const phrases = ["Deep Learning Models.", "Scalable Systems.", "ML Pipelines."];
+        const phrases = ["Deep Learning Models.", "Data Intelligence.", "Scalable Systems."];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -416,5 +454,4 @@
         }
     </script>
 </body>
-
 </html>
