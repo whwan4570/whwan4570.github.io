@@ -27,11 +27,6 @@
         }
     </script>
     <style>
-        .typing-cursor::after {
-            content: '|';
-            animation: blink 1s step-start infinite;
-        }
-        @keyframes blink { 50% { opacity: 0; } }
         
         body {
             background-color: #0f172a;
@@ -69,13 +64,17 @@
                 <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
                     Wonjoon Hwang.
                 </h1>
-                <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-6 h-16">
-                    I build <span id="typewriter" class="text-white typing-cursor"></span>
-                </h2>
-                <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
-                    I am targeting <strong>Data Scientist</strong> and <strong>Machine Learning Engineer</strong> roles—the same work, two lenses: <span class="text-accent">sound metrics, experiments, and inference</span> on one side, and <span class="text-accent">pipelines, training, and deployment trade-offs</span> on the other.
-                    Pursuing an MS in Data Science at the <strong>University of Washington</strong> (GPA 3.86), building on a B.S. in Data Science from the <strong>University of Georgia</strong> with minors in Statistics and Computer Science.
-                    Based in <strong>Seattle, WA</strong>, I like problems where the story in the data and the path to a reliable model both have to be right.
+                <p class="text-xl md:text-2xl font-semibold text-slate-400 mb-6 max-w-xl">
+                    Data Scientist <span class="text-slate-600">&amp;</span> Machine Learning Engineer
+                </p>
+                <p class="text-lg text-slate-200 mb-4 max-w-xl leading-relaxed">
+                    I build end-to-end machine learning systems and extract actionable insights from real-world data to support data-driven decision-making.
+                </p>
+                <p class="text-lg text-slate-400 mb-6 max-w-xl leading-relaxed">
+                    Experienced in predictive modeling, feature engineering, and deploying data-driven solutions across real-world applications.
+                </p>
+                <p class="text-sm text-slate-500 mb-8 max-w-xl leading-relaxed">
+                    MS Data Science, <strong>University of Washington</strong> (GPA 3.86) · BS Data Science, <strong>University of Georgia</strong> (Statistics &amp; CS minors) · <strong>Seattle, WA</strong>
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#projects" class="px-8 py-4 bg-accent/10 border border-accent text-accent rounded hover:bg-accent hover:text-dark transition font-mono font-bold">
@@ -319,24 +318,24 @@
                         <div class="space-y-3 text-sm leading-relaxed text-slate-400 mb-4">
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Problem</p>
-                                <p>Skincare recommendations fail when ingredient signals conflict—users need stable, explainable rankings, not opaque “similar items.”</p>
+                                <p>Develop a personalized skincare recommendation system based on ingredient-level analysis.</p>
                             </div>
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Data</p>
-                                <p><strong>6,000+</strong> ingredient records, <strong>1,000+</strong> products, ratings, and structured user skin profiles.</p>
+                                <p>Ingredient attributes, <strong>6,000+</strong> ingredient records, <strong>1,400+</strong> products, ratings, and structured user skin profiles.</p>
                             </div>
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Method</p>
-                                <p>Ingredient-effect scoring fused with ratings and profile constraints; deterministic ranking pipeline (vs. black-box end-to-end only).</p>
+                                <p>Designed a <strong>weighted scoring system</strong> integrating ingredient effects (<strong>good / avoid / neutral</strong>) and user skin profiles.</p>
                             </div>
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Result</p>
-                                <p>Scoring graph over <strong>6K+ × 1K+</strong> relationships; tightened <strong>top-5</strong> lists by suppressing contradictory ingredient pairs and surfacing profile-aligned picks.</p>
+                                <p>Improved recommendation relevance across <strong>1,400+</strong> products and <strong>6,000+</strong> ingredients.</p>
                             </div>
                         </div>
                         <div class="rounded-lg border border-gold/40 bg-gold/5 p-3 mb-6">
                             <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-gold mb-1.5">Insight</p>
-                            <p class="text-slate-200 text-sm leading-relaxed">Trust scales with <strong>auditable logic</strong>—ingredient-level scoring beats a slick UI if users can see why a product is in or out.</p>
+                            <p class="text-slate-200 text-sm leading-relaxed">Overlapping ingredient benefits (e.g., <strong>Vitamin C</strong> from multiple sources) required careful weighting to avoid bias in recommendations.</p>
                         </div>
                         <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
                             <span class="bg-slate-800 px-2 py-1 rounded">Recommendations</span>
@@ -367,29 +366,30 @@
                         <div class="space-y-3 text-sm leading-relaxed text-slate-400 mb-4">
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Problem</p>
-                                <p>SPD’s open tables are powerful but unwieldy—analysts need fast maps, filters, and reproducible cleaning without a warehouse budget.</p>
+                                <p>Enable interactive exploration of real-world datasets for faster, more intuitive understanding.</p>
                             </div>
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Data</p>
-                                <p>Seattle <strong>SPD crime</strong> open data (<strong>2008–present</strong> portal coverage); geocoded incidents where provided; categorical + temporal fields normalized in SQLite.</p>
+                                <p>Seattle <strong>SPD crime</strong> open data (<strong>2008–present</strong>); geocoded incidents where provided; fields normalized in <strong>SQLite</strong>.</p>
                             </div>
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Method</p>
-                                <p><strong>Python</strong> + <strong>Dash</strong> UI; <strong>SQLite</strong> storage; chunked ingest + memory-aware queries for Render-class hosting.</p>
+                                <p>Dashboard with <strong>Dash</strong>, <strong>Plotly</strong>, and <strong>SQL</strong>-based querying for real-time filtering; memory-aware ingest for hosted deployment.</p>
                             </div>
                             <div>
                                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">Result</p>
-                                <p>Interactive geospatial + time slicers on <strong>city-scale</strong> incident history; pipeline stayed responsive under hobby-tier RAM by bounding working sets per view.</p>
+                                <p>Delivered interactive <strong>KPI</strong> tracking, maps, and exploration tools over city-scale incident history.</p>
                             </div>
                         </div>
                         <div class="rounded-lg border border-gold/40 bg-gold/5 p-3 mb-6">
                             <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-gold mb-1.5">Insight</p>
-                            <p class="text-slate-200 text-sm leading-relaxed">For civic dashboards, <strong>opinionated cleaning + bounded queries</strong> beat raw completeness—users explore more when each click stays snappy.</p>
+                            <p class="text-slate-200 text-sm leading-relaxed">Effective visualization improves decision-making by translating complex data into intuitive patterns.</p>
                         </div>
                         <div class="flex flex-wrap gap-3 font-mono text-xs text-slate-300">
                             <span class="bg-slate-800 px-2 py-1 rounded">Python</span>
                             <span class="bg-slate-800 px-2 py-1 rounded">Dash</span>
-                            <span class="bg-slate-800 px-2 py-1 rounded">Data Visualization</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Plotly</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">SQL</span>
                         </div>
                     </div>
                 </div>
@@ -468,6 +468,9 @@
                             <span class="bg-slate-800 px-2 py-1 rounded">Data Mining</span>
                             <span class="bg-slate-800 px-2 py-1 rounded">PCA</span>
                         </div>
+                        <p class="mt-4 text-xs text-slate-500 leading-relaxed border-t border-slate-700 pt-4 italic">
+                            Interested in applying predictive modeling and machine learning to real-world problems such as risk modeling and fraud detection.
+                        </p>
                     </div>
                 </div>
 
@@ -514,6 +517,12 @@
                     </div>
                 </div>
             </div>
+
+                <div class="mt-16 max-w-4xl mx-auto glass px-6 py-5 rounded-xl border border-slate-600/80 text-center">
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Interested in applying data science to performance analytics and data-driven decision-making in competitive environments.
+                    </p>
+                </div>
         </div>
     </section>
 
@@ -526,24 +535,24 @@
             </div>
             <div class="glass p-8 rounded-xl border border-slate-700 space-y-6">
                 <div>
-                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Programming</h3>
-                    <p class="text-slate-300">Python, R, Java, SQL</p>
+                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Machine Learning</h3>
+                    <p class="text-slate-300">XGBoost, LightGBM, PyTorch, TensorFlow</p>
                 </div>
                 <div>
-                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">ML &amp; Data</h3>
-                    <p class="text-slate-300">Pandas, NumPy, Scikit-learn, PyTorch, TensorFlow</p>
+                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Data Processing</h3>
+                    <p class="text-slate-300">Pandas, SQL, feature engineering</p>
                 </div>
                 <div>
-                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Tools</h3>
-                    <p class="text-slate-300">Git, Docker, Google Cloud, Tableau</p>
+                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Visualization</h3>
+                    <p class="text-slate-300">Plotly, Dash, Tableau</p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Systems</h3>
+                    <p class="text-slate-300">End-to-end ML pipelines · Git · Docker · Google Cloud</p>
                 </div>
                 <div>
                     <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Languages</h3>
                     <p class="text-slate-300">Korean (native), English (professional working proficiency)</p>
-                </div>
-                <div>
-                    <h3 class="text-sm font-mono text-accent uppercase tracking-wider mb-2">Interests</h3>
-                    <p class="text-slate-300">AI systems, machine learning infrastructure, distributed computing</p>
                 </div>
             </div>
         </div>
@@ -563,11 +572,14 @@
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-white">Databricks × UW Paul G. Allen School Hacks</h3>
-                        <p class="text-slate-500 text-sm mb-2 font-mono">Mar 2026 · <span class="text-gold font-semibold">1st Place</span></p>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-3">
-                            Developed a crop yield prediction prototype using weather datasets, with ML models and data pipelines to analyze environmental drivers of agricultural productivity.
-                        </p>
+                        <h3 class="text-xl font-bold text-white">TerraCast · Databricks × UW Paul G. Allen School Hacks</h3>
+                        <p class="text-slate-500 text-sm mb-3 font-mono">Mar 2026 · <span class="text-gold font-semibold">1st Place</span></p>
+                        <div class="space-y-2 text-sm text-slate-400 leading-relaxed mb-3">
+                            <p><span class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mr-2">Problem</span>Predict crop yield using environmental and weather data.</p>
+                            <p><span class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mr-2">Method</span>Built a <strong>LightGBM</strong> model with extensive feature engineering (degree days, precipitation anomalies, heat stress).</p>
+                            <p><span class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mr-2">Result</span>Strong predictive performance (<strong>R² ~ 0.8</strong>) and <strong>1st place</strong> in the Databricks × UW Hackathon.</p>
+                            <p><span class="font-mono text-[10px] uppercase tracking-[0.2em] text-gold mr-2">Insight</span><span class="text-slate-200">Weather anomalies emerged as the key drivers of yield variation—climate-aware features matter as much as the booster choice.</span></p>
+                        </div>
                         <a href="https://devpost.com/software/terracast#software_1208867" target="_blank" rel="noopener noreferrer" class="text-xs text-accent font-mono hover:underline">View on Devpost <i class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
@@ -620,35 +632,6 @@
     </footer>
 
     <script>
-        const textElement = document.getElementById('typewriter');
-        const phrases = ["Rigorous Experiments.", "Production ML.", "Scalable Pipelines."];
-        let phraseIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function type() {
-            const currentPhrase = phrases[phraseIndex];
-            if (isDeleting) {
-                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            if (!isDeleting && charIndex === currentPhrase.length) {
-                isDeleting = true;
-                setTimeout(type, 2000);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                setTimeout(type, 500);
-            } else {
-                setTimeout(type, isDeleting ? 100 : 150);
-            }
-        }
-        document.addEventListener('DOMContentLoaded', type);
-
-        // Copy email to clipboard
         function copyEmail(btn) {
             const email = "wjhwang0503@gmail.com";
             
