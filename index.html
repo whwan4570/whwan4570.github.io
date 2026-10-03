@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wonjoon Hwang — Data Science &amp; Machine Learning</title>
-  <meta name="description" content="Wonjoon Hwang, a UW Data Science master's student working on environmental prediction models, data engineering, and practical tools. Selected projects, experience, and contact.">
+  <title>Wonjoon Hwang — Data Engineering &amp; Machine Learning</title>
+  <meta name="description" content="Wonjoon Hwang builds data pipelines, ML workflows, and software products with Python, SQL, Spark, Databricks, and TypeScript. UW Data Science master's student. Projects, experience, and résumé.">
   <meta name="theme-color" content="#f7f5f0">
-  <meta property="og:title" content="Wonjoon Hwang — Data Science &amp; Machine Learning">
-  <meta property="og:description" content="Environmental data, prediction models, and the work behind them. Projects and experience from a UW Data Science master's student.">
+  <meta property="og:title" content="Wonjoon Hwang — Data Engineering &amp; Machine Learning">
+  <meta property="og:description" content="Data engineering, machine learning, and product development. Selected work and experience from Wonjoon Hwang, a UW Data Science master's student.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://whwan4570.github.io/">
   <meta property="og:image" content="https://whwan4570.github.io/profile.jpg?v=2">
@@ -77,6 +77,10 @@
     .project-row .project-label { margin-top:10px; margin-bottom:0; }
     .project-row .result { color:var(--ink); margin-top:14px; font-size:14px; }
     .project-row .project-links { margin-top:14px; }
+    .project-facts { display:flex; flex-wrap:wrap; gap:18px 28px; margin:20px 0 0; }
+    .project-facts dt { color:var(--muted); font-size:11px; margin-bottom:4px; }
+    .project-facts dd { margin:0; font-size:19px; letter-spacing:-.3px; font-variant-numeric:tabular-nums; }
+    .project-status { margin-top:14px; font-size:12px; color:var(--muted); }
     details { font-size:14px; }
     summary { cursor:pointer; padding-block:10px; }
     .model-notes { margin-top:12px; color:var(--muted); }
@@ -188,11 +192,11 @@
       <div>
         <p class="eyebrow"><span class="location-dot" aria-hidden="true"></span>Seattle, WA · UW Data Science ’27</p>
         <h1 id="name">Wonjoon Hwang</h1>
-        <p class="hero-lead">I’m a data science master’s student at the <a href="https://www.washington.edu/">University of Washington</a>. I work with environmental data to build prediction models and tools.</p>
-        <p class="hero-note">I co-developed TerraCast, a crop-yield prediction and anomaly detection platform, and presented it at the Data + AI Summit 2026.</p>
+        <p class="hero-lead">I build data and ML workflows that turn complex data into practical tools and decisions.</p>
+        <p class="hero-note">I’m completing my M.S. in Data Science at the <a href="https://www.washington.edu/" class="text-link">University of Washington</a>. My work spans data pipelines, predictive modeling, distributed ML, and product development.</p>
         <div class="hero-links">
           <a class="button" href="#projects">Selected work <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="https://www.linkedin.com/in/wonjoon-hwang-0496ba277/details/featured/" target="_blank" rel="noopener noreferrer">Résumé on LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="resume.pdf" target="_blank" rel="noopener noreferrer">Résumé PDF <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <figure class="portrait">
@@ -207,7 +211,7 @@
     <section class="section" id="projects" aria-labelledby="work-title">
       <div class="section-title">
         <h2 id="work-title">Selected work</h2>
-        <p>Prediction, evaluation, and data tools.</p>
+        <p>Data pipelines, ML, and product engineering.</p>
       </div>
       <article class="featured" aria-labelledby="terracast-title">
         <div>
@@ -215,21 +219,47 @@
           <h3 id="terracast-title">TerraCast</h3>
           <p class="project-subtitle">When crop yields depart from weather expectations.</p>
           <p class="project-copy">We combined county-level corn and soybean yields with weather data to predict yields and flag unusual outcomes. The dashboard lets users explore predictions, regional patterns, and model explanations.</p>
-          <p class="project-copy"><strong>My work:</strong> collaborated on weather feature engineering, predictive modeling, and anomaly analysis. Presented our approach at the Data + AI Summit 2026.</p>
-          <div class="metric"><b>0.6440 R²</b><span>County-based 5-fold CV<br>LightGBM + Random Forest ensemble</span></div>
+          <p class="project-copy"><strong>My work:</strong> built Python, SQL, Spark, and Databricks workflows to integrate crop, weather, and climate data; contributed to yield modeling and residual-based anomaly detection. Presented TerraCast at the Data + AI Summit 2026.</p>
+          <div class="metric"><b>0.88 R²</b><span>County-held-out 5-fold CV<br>LightGBM + Random Forest ensemble</span></div>
+          <details class="model-notes">
+            <summary>Evaluation details</summary>
+            <p>The saved training notebook records a mean R² of 0.8815 across five county-held-out folds: 0.8805, 0.8863, 0.8851, 0.8733, and 0.8824. Counties, rather than individual rows, are assigned to folds; the result combines predictions across corn and soybean models by region.</p>
+            <p>The linked project poster separately reports R² = 0.6440 for a LightGBM + Random Forest ensemble with county-based 5-fold CV. This page quotes the notebook’s recorded result. Both sources describe county-based validation; a difference in evaluation protocol has not been established.</p>
+          </details>
           <div class="project-links">
             <a class="text-link" href="https://github.com/whwan4570/DataBricks_Hackathon_UW" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="REPO.pdf" target="_blank" rel="noopener noreferrer">Project report <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://devpost.com/software/terracast" target="_blank" rel="noopener noreferrer">Devpost <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="stack">Databricks · Python · LightGBM · MLflow · SHAP</p>
+          <p class="stack">Python · SQL · Spark · Databricks · LightGBM · MLflow</p>
         </div>
         <figure class="project-visual">
           <a href="REPO.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read the TerraCast project report">
             <img src="assets/terracast-dashboard.png" width="1288" height="1072" alt="TerraCast dashboard showing 6,823 historical records, 31 yield anomalies, a map of state-level residuals, and residual trends from 2010 to 2023." loading="lazy">
           </a>
-          <figcaption>Dashboard image and evaluation results from our project report.</figcaption>
+          <figcaption>Dashboard image from the project poster, which displays its separately reported R² of 0.6440. See evaluation details for the notebook result.</figcaption>
         </figure>
+      </article>
+      <article class="project-row" aria-labelledby="darin-title">
+        <div>
+          <h3 id="darin-title">Darin</h3>
+          <p class="project-label">Product Developer<br>Jun 2026–Present · Pre-launch</p>
+        </div>
+        <div>
+          <p class="project-copy">A private family memory application. I develop and maintain its TypeScript workflows, with a focus on editor structure, localization, and reliable saves.</p>
+          <p class="project-copy"><strong>My work:</strong> split a large core editor into smaller modules and replaced hard-coded UI strings with localized messages while maintaining parity across five languages.</p>
+          <dl class="project-facts">
+            <div><dt>Core editor module</dt><dd>1,713 → 205 lines</dd></div>
+            <div><dt>Hard-coded strings removed</dt><dd>1,071</dd></div>
+            <div><dt>Languages supported</dt><dd>5</dd></div>
+          </dl>
+          <details class="model-notes">
+            <summary>Save reliability testing</summary>
+            <p>Test cases cover preserving drafts when a save fails, blocking duplicate saves, retrying failed requests, and preventing delayed saves from clearing a newer draft after navigation or account changes.</p>
+          </details>
+          <p class="stack">TypeScript · React Native · Localization · Reliability testing</p>
+          <p class="project-status">Pre-launch product · Source code is private</p>
+        </div>
       </article>
       <article class="project-row" aria-labelledby="ey-title">
         <div>
@@ -237,7 +267,7 @@
           <p class="project-label">EY 2026 Challenge<br>Jan–Mar 2026</p>
         </div>
         <div>
-          <p class="project-copy">Predicting alkalinity, electrical conductance, and dissolved reactive phosphorus in South African rivers using satellite, climate, and environmental features.</p>
+          <p class="project-copy">Integrated and validated 9,319 water-quality observations with 205 satellite, climate, hydrology, and geospatial features to predict alkalinity, electrical conductance, and dissolved reactive phosphorus in South African rivers.</p>
           <p class="project-copy"><strong>My work:</strong> feature engineering, spatial cross-validation, and multi-stage modeling, with particular attention to the difficult phosphorus target.</p>
           <p class="result"><strong>Final leaderboard R²: 0.4259 · Rank: 66</strong></p>
           <details class="model-notes">
@@ -245,7 +275,19 @@
             <p>Changes to the phosphorus prediction distribution moved the leaderboard score more than increasing model complexity. Spatial cross-validation and leaderboard results did not always agree. These observations came from competition feedback; they do not establish performance on a separate unseen dataset.</p>
           </details>
           <div class="project-links"><a class="text-link" href="https://github.com/whwan4570/EY2026-Optimizing-Clean-Water-Supply" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/wonjoon-hwang-0496ba277/details/projects/" target="_blank" rel="noopener noreferrer">Project notes on LinkedIn <span aria-hidden="true">↗</span></a></div>
-          <p class="stack">Python · Gradient boosting · GroupKFold · Geospatial features</p>
+          <p class="stack">Python · Spatial CV · Landsat · TerraClimate · ERA5 · HydroRIVERS</p>
+        </div>
+      </article>
+      <article class="project-row" aria-labelledby="watchdawg-title">
+        <div>
+          <h3 id="watchdawg-title">WatchDawg Crime Analytics</h3>
+          <p class="project-label">UW · Team project<br>Sep–Dec 2025</p>
+        </div>
+        <div>
+          <p class="project-copy">Python and SQL workflows turn Seattle public-safety records into a Dash dashboard with geospatial views, time-series charts, and filters by location and incident type.</p>
+          <p class="project-copy">The public implementation uses SQLite date-range queries and compact data types to keep memory usage manageable on a hosted dashboard.</p>
+          <div class="project-links"><a class="text-link" href="https://github.com/whwan4570/Watchdawg_app" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data" target="_blank" rel="noopener noreferrer">Data <span aria-hidden="true">↗</span></a></div>
+          <p class="stack">Python · SQL · Dash · Plotly · SQLite</p>
         </div>
       </article>
       <article class="project-row" aria-labelledby="imbalance-title">
@@ -278,21 +320,10 @@
           <p class="stack">Computer vision · CNNs · SRCNN · Image resampling</p>
         </div>
       </article>
-      <article class="project-row" aria-labelledby="nfl-title">
-        <div>
-          <h3 id="nfl-title">NFL model benchmarking</h3>
-          <p class="project-label">NFL Big Data Bowl 2026</p>
-        </div>
-        <div>
-          <p class="project-copy">Compared structurally equivalent two-layer GRU encoder–decoder models in PyTorch and TensorFlow on NFL player trajectories, focusing on how predictions diverged during autoregressive inference.</p>
-          <div class="project-links"><a class="text-link" href="https://github.com/whwan4570/NFL-Prediction-Model-Comparison" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
-          <p class="stack">PyTorch · TensorFlow · Sequence modeling · Sports analytics</p>
-        </div>
-      </article>
       <details class="more-projects">
         <summary>More projects</summary>
         <ul class="more-list">
-          <li><h4>WatchDawg Crime Analytics</h4><p>A Dash and Plotly dashboard for exploring Seattle crime records with maps and SQL-based filters. <a href="https://github.com/whwan4570/Watchdawg_app" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data" target="_blank" rel="noopener noreferrer">Data ↗</a></p></li>
+          <li><h4>NFL model benchmarking</h4><p>Compared equivalent two-layer GRU encoder–decoder models in PyTorch and TensorFlow, focusing on divergence during autoregressive inference. <a href="https://github.com/whwan4570/NFL-Prediction-Model-Comparison" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
           <li><h4>Smart Skincare Recommendation</h4><p>Ingredient-based product scoring using skin profiles. I worked on weighting overlapping ingredient benefits. <a href="https://github.com/JungmoonHa/Data515_SmartSkincare" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="https://jungmoonha.github.io/Data515_SmartSkincare/smart_skincare/templates/index.html" target="_blank" rel="noopener noreferrer">Demo ↗</a></p></li>
           <li><h4>Best Artworks of All Time</h4><p>Artist classification using custom CNNs and transfer learning in TensorFlow and Keras. <a href="https://github.com/whwan4570/Deeplearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
           <li><h4>Housing Market Modeling</h4><p>Used PCA to compare housing and macroeconomic signals across the 2007 and 2020 periods. <a href="https://github.com/whwan4570/2020CoronaHousingBubblevs.2007SubprimeMortgageCrisis" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
@@ -301,7 +332,7 @@
       </details>
     </section>
     <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="section-title"><h2 id="experience-title">Experience</h2><p>Research, community, and data quality.</p></div>
+      <div class="section-title"><h2 id="experience-title">Experience</h2><p>Data engineering, research, and data quality.</p></div>
       <div class="experience-list">
         <article class="experience-row">
           <div><h3>University of Washington</h3><p class="dates">Oct 2026–Present · Seattle</p></div>
@@ -309,31 +340,31 @@
         </article>
         <article class="experience-row">
           <div><h3>Databricks</h3><p class="dates">Jun 2026–Present</p></div>
-          <div><h4 class="role">Student Fellow</h4><p class="experience-copy">Co-developed TerraCast and presented it at the Data + AI Summit 2026. Support student engagement and hands-on learning with the Databricks platform.</p></div>
+          <div><h4 class="role">Student Fellow</h4><p class="experience-copy">Build end-to-end Python, SQL, Spark, and Databricks workflows for ingestion, transformation, validation, analytics, and ML. Develop reusable technical demos of lakehouse and data-engineering workflows for mixed technical audiences. Selected after our 1st-place UW hackathon finish; presented TerraCast at the Data + AI Summit.</p></div>
         </article>
         <article class="experience-row">
           <div><h3>Translation Commons</h3><p class="dates">Jun–Sep 2026 · Remote</p></div>
-          <div><h4 class="role">Data Engineering &amp; AI Support Volunteer</h4><p class="experience-copy">Validated structured language metadata, resolved scope and classification issues, and linked language records while preserving source information and data integrity.</p></div>
+          <div><h4 class="role">Volunteer Data Engineer</h4><p class="experience-copy">Shipped 21 production fixes across 9 language groups, correcting parent–child relationships in shared language data. Built a scope-validation tool that detected 95 hierarchy inconsistencies, and added 9 unit tests for parent-override behavior and issue detection.</p></div>
         </article>
         <article class="experience-row">
           <div><h3>University of Georgia</h3><p class="dates">Sep 2023–Jan 2024</p></div>
-          <div><h4 class="role">Research Assistant</h4><p class="experience-copy">Implemented FedSVD and FedPower in Python and TensorFlow to simulate training across distributed clients and compare results with centralized baselines.</p></div>
+          <div><h4 class="role">Research Assistant · Federated &amp; Distributed ML</h4><p class="experience-copy">Implemented and evaluated FedSVD and FedPower in Python and TensorFlow across clients with non-IID data. Compared convergence, accuracy, and communication/computation trade-offs against centralized and baseline methods.</p></div>
         </article>
       </div>
     </section>
     <section class="section about" id="about" aria-labelledby="about-title">
       <h2 id="about-title">A little more<br>about me.</h2>
       <div>
-        <p class="about-copy">I’m based in Seattle and completing my M.S. in Data Science at UW. My recent work has focused on environmental prediction, feature engineering, and model evaluation. I also have experience with language data quality and interactive dashboards.</p>
+        <p class="about-copy">I’m based in Seattle and completing my M.S. in Data Science at UW. I work across the data lifecycle: ingestion and validation, modeling and evaluation, and the software people use to explore the results. My experience includes distributed ML research, language data quality, geospatial analytics, and a family memory application.</p>
         <ul class="education">
           <li><h3>University of Washington</h3><p>M.S. Data Science · Sep 2025–Mar 2027 (expected) · GPA 3.86</p></li>
           <li><h3>University of Georgia</h3><p>B.S. Data Science · Aug 2022–May 2025<br>Minors in Statistics and Computer Science</p></li>
         </ul>
         <div class="tools">
           <div><h3>Modeling</h3><p>PyTorch, TensorFlow, XGBoost, LightGBM</p></div>
-          <div><h3>Data &amp; engineering</h3><p>Python, SQL, Pandas, Databricks</p></div>
+          <div><h3>Data engineering</h3><p>Python, SQL, Spark, Databricks, Pandas</p></div>
           <div><h3>Visualization</h3><p>Plotly, Dash, Tableau</p></div>
-          <div><h3>Languages</h3><p>Korean and English</p></div>
+          <div><h3>Software &amp; databases</h3><p>TypeScript, PostgreSQL, MySQL, DuckDB, Git</p></div>
         </div>
       </div>
     </section>
@@ -341,7 +372,7 @@
   <footer class="contact" id="contact">
     <div class="wrap">
       <div class="contact-top">
-        <div><h2>Get in touch.</h2><p class="contact-note">Seeking full-time roles in data science, machine learning, and data engineering after graduation in March 2027.</p></div>
+        <div><h2>Get in touch.</h2><p class="contact-note">Seeking full-time roles in data engineering, machine learning, and data science after graduation in March 2027.</p></div>
         <div class="contact-address">
           <a class="email-link" href="mailto:wjhwang0503@gmail.com">wjhwang0503@gmail.com <span aria-hidden="true">↗</span></a>
           <div class="email-tools"><button class="copy-button" id="copy-email" type="button" hidden>Copy email</button><span class="copy-status" id="copy-status" role="status" aria-live="polite"></span></div>
