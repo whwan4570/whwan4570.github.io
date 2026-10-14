@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wonjoon Hwang — Data Engineering &amp; Machine Learning</title>
-  <meta name="description" content="Wonjoon Hwang: Databricks Student Fellow, Databricks × UW Hackathon winner, and founder of Darin, an iOS app in TestFlight beta. Open to 2027 new-grad Data Engineering and ML roles and relocation. Contact, projects, and résumé.">
+  <title>Wonjoon Hwang — Data Engineering, ML &amp; Applied AI</title>
+  <meta name="description" content="Wonjoon Hwang, UW M.S. Data Science candidate building data pipelines, ML systems, and production applications. Seeking 2027 new-grad Data Engineering, Machine Learning, and Applied AI roles; open to U.S. relocation. Projects, contact, and résumé.">
   <meta name="theme-color" content="#f7f5f0">
-  <meta property="og:title" content="Wonjoon Hwang — Data Engineering &amp; Machine Learning">
-  <meta property="og:description" content="Databricks Student Fellow, hackathon winner, and solo developer of Darin. UW M.S. Data Science ’27. Open to 2027 new-grad Data Engineering and ML roles. Available March 2027; open to relocation.">
+  <meta property="og:title" content="Wonjoon Hwang — Data Engineering, ML &amp; Applied AI">
+  <meta property="og:description" content="UW M.S. Data Science ’27 · Data engineering, machine learning, and production software. Databricks Student Fellow, hackathon winner, and founder of Darin. Seeking 2027 new-grad DE, ML, and Applied AI roles; open to relocation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://whwan4570.github.io/">
   <meta property="og:image" content="https://whwan4570.github.io/profile.jpg?v=2">
@@ -207,9 +207,9 @@
       <div>
         <p class="eyebrow"><span class="location-dot" aria-hidden="true"></span>Seattle, WA · UW Data Science ’27</p>
         <h1 id="name">Wonjoon Hwang</h1>
-        <p class="hero-lead">I’m a Databricks Student Fellow and Databricks × UW Hackathon winner. I built Darin, an iOS app now on <a href="https://testflight.apple.com/join/MmKQwX1b" target="_blank" rel="noopener noreferrer">TestFlight</a>.</p>
-        <p class="hero-note">I’m completing my M.S. in Data Science at the <a href="https://www.washington.edu/" class="text-link">University of Washington</a>. I work across Python, SQL, and Spark pipelines, ML evaluation, and product development.</p>
-        <p class="availability"><strong>Open to 2027 new-grad Data Engineering &amp; ML roles.</strong><span>Available March 2027 · <b>Open to relocation</b></span></p>
+        <p class="hero-lead">I’m a UW M.S. Data Science candidate building data pipelines, machine learning systems, and production applications.</p>
+        <p class="hero-note">My work spans Python, SQL, Spark, and Databricks data engineering, applied ML, and product development. I’m also a Databricks Student Fellow, winner of the Databricks × UW Hackathon, and founder of Darin, an iOS app in <a href="https://testflight.apple.com/join/MmKQwX1b" class="text-link" target="_blank" rel="noopener noreferrer">TestFlight</a>.</p>
+        <p class="availability"><strong>Seeking 2027 new-grad roles in Data Engineering, Machine Learning, and Applied AI.</strong><span>M.S. expected March 2027 · Seattle, WA · <b>Open to relocation</b></span></p>
         <div class="hero-links">
           <a class="button" href="resume.pdf" download="Wonjoon_Hwang_Resume.pdf">Download résumé <span aria-hidden="true">↓</span></a>
           <a class="text-link" href="#projects">Selected work <span aria-hidden="true">↓</span></a>
@@ -227,32 +227,30 @@
     </section>
     <aside class="current" aria-label="Current work">
       <span class="eyebrow">Currently</span>
-      <p><strong>Research Intern at UW SEAL</strong> · <strong>Databricks Student Fellow</strong> · M.S. expected March 2027</p>
+      <p><strong>UW M.S. Data Science</strong> · Research Intern at UW SEAL · Databricks Student Fellow</p>
     </aside>
     <section class="section" id="projects" aria-labelledby="work-title">
       <div class="section-title">
         <h2 id="work-title">Selected work</h2>
-        <p>Data pipelines, ML, and product engineering.</p>
+        <p>Selected work across data engineering, machine learning, and production software.</p>
       </div>
       <article class="featured" aria-labelledby="terracast-title">
         <div>
           <p class="project-label"><span class="award">1st place · Databricks × UW Hackathon</span><span>2026 · Team project</span></p>
           <h3 id="terracast-title">TerraCast</h3>
           <p class="project-subtitle">When crop yields depart from weather expectations.</p>
-          <p class="project-copy">We combined county-level corn and soybean yields with weather data to predict yields and flag unusual outcomes. The dashboard lets users explore predictions, regional patterns, and model explanations.</p>
-          <p class="project-copy"><strong>My work:</strong> built Python, SQL, Spark, and Databricks workflows to integrate crop, weather, and climate data; contributed to yield modeling and residual-based anomaly detection. Presented TerraCast at the Data + AI Summit 2026.</p>
-          <div class="metric"><b>0.88 R²</b><span>Historical county-held-out 5-fold CV<br>LightGBM 60% + Random Forest 40% ensemble</span></div>
+          <p class="project-copy">Built a county-level crop-yield forecasting system that combines historical yield and weather data to predict corn and soybean yields and surface unusual outcomes.</p>
+          <p class="project-copy"><strong>My work:</strong> built Python, SQL, Spark, and Databricks pipelines for crop, weather, and climate data; contributed to LightGBM/Random Forest modeling and model evaluation; and presented the project at Data + AI Summit 2026.</p>
           <dl class="project-facts">
-            <div><dt>Historical county CV</dt><dd>0.8815 mean R²</dd></div>
-            <div><dt>Later time CV</dt><dd>0.8483 mean R²</dd></div>
-            <div><dt>County-year/crop rows</dt><dd>6,823</dd></div>
+            <div><dt>Historical county-held-out CV R²</dt><dd>0.882</dd></div>
+            <div><dt>Later walk-forward time CV R²</dt><dd>0.848</dd></div>
+            <div><dt>County-year/crop observations</dt><dd>6,823</dd></div>
           </dl>
+          <p class="project-status">County-held-out 5-fold cross-validation · Mean R² · LightGBM 60% + Random Forest 40% ensemble</p>
           <details class="model-notes">
-            <summary>Evaluation audit — October 2026</summary>
-            <p>Historical MLflow runs recorded mean R² ≈ 0.8815 using county-held-out 5-fold cross-validation with a LightGBM/Random Forest ensemble. A previously displayed 0.6440 value was traced to a hard-coded dashboard constant and could not be tied to an evaluation run, so it is no longer reported as model performance.</p>
-            <p>A later audit also identified an index-alignment bug in the out-of-fold prediction writeback path. The bug affected stored predictions, residuals, and downstream anomaly counts, but not the fold-level CV arrays used to calculate R². As a result, the previously reported 31-anomaly / 0.45% figure has been withdrawn pending a canonical rerun.</p>
-            <p>A later walk-forward time-CV run recorded mean R² ≈ 0.8483; it is a separate evaluation and is not combined with the historical county-CV result.</p>
-            <p>Presented TerraCast to Corteva representatives at the Data + AI Summit 2026.</p>
+            <summary>Evaluation notes</summary>
+            <p>Historical county-held-out CV and later walk-forward time CV are reported separately. An October 2026 audit verified the reported CV scores and identified a prediction-storage issue affecting previously reported anomaly counts, which were subsequently withdrawn.</p>
+            <p><a class="text-link" href="terracast-evaluation.html">See methodology and audit details <span aria-hidden="true">→</span></a></p>
           </details>
           <div class="project-links">
             <a class="text-link" href="https://github.com/whwan4570/DataBricks_Hackathon_UW" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -264,7 +262,7 @@
           <a href="https://github.com/whwan4570/DataBricks_Hackathon_UW" target="_blank" rel="noopener noreferrer" aria-label="View TerraCast on GitHub">
             <img src="assets/terracast-workflow.svg" width="800" height="640" alt="TerraCast workflow: crop, weather, and climate data flow through a Databricks pipeline into yield modeling and separate county-held-out and time-based evaluations." loading="lazy">
           </a>
-          <figcaption>Data and evaluation workflow. Historical county CV and later time CV are separate results; see the audit for prediction-storage limitations.</figcaption>
+          <figcaption>End-to-end data and evaluation workflow spanning ingestion, feature engineering, model training, cross-validation, and analysis.</figcaption>
         </figure>
       </article>
       <article class="project-row launch-project" aria-labelledby="darin-title">
@@ -273,28 +271,40 @@
           <p class="project-label"><span class="award">Founder / Solo Developer</span><span>Jun 2026–Present · iOS TestFlight beta</span></p>
         </div>
         <div>
-          <p class="project-copy">An iOS baby-care journal, available to test on TestFlight. Darin connects everyday care records with the growth stories families want to keep.</p>
-          <p class="project-copy"><strong>My work:</strong> founded and built the React Native/TypeScript app and its Supabase backend as the sole developer, including authentication, family permissions, private media access, voice input, and a five-language interface.</p>
+          <p class="project-copy">A production-oriented iOS baby-care app for logging daily care, preserving family memories, and securely sharing records across caregivers.</p>
+          <p class="project-copy">Founded and built the React Native/TypeScript app and Supabase backend as the sole developer, including authentication, role-based family access, private media, cross-device synchronization, voice input, and five-language localization.</p>
           <ol class="product-flow" aria-label="Darin product flow">
-            <li><h4>Record the day</h4><p>Quick and voice-assisted feeding, sleep, and diaper logs, with daily summaries.</p></li>
-            <li><h4>Keep the story</h4><p>Photo diaries and growth books, with page templates, comments, and stickers.</p></li>
-            <li><h4>Share as a family</h4><p>A shared memories feed and family access controls for private records and media.</p></li>
+            <li><h4>Record the day</h4><p>Fast and voice-assisted logging for feeding, sleep, diapers, and daily summaries.</p></li>
+            <li><h4>Keep the story</h4><p>Turn photos and diary entries into customizable growth books and family stories.</p></li>
+            <li><h4>Share as a family</h4><p>Share private records and memories with role-based family access.</p></li>
           </ol>
           <div class="project-links"><a class="button" href="https://testflight.apple.com/join/MmKQwX1b" target="_blank" rel="noopener noreferrer">Try Darin on TestFlight <span aria-hidden="true">↗</span></a></div>
           <details class="model-notes">
             <summary>Product story &amp; engineering details</summary>
-            <h4>From scattered logs to a shared story</h4>
-            <p>Care records and photos often live in separate places. I built Darin to connect quick daily logging with the family’s longer story: photo diaries, growth books, and shared moments. Book pages combine photos, diary text, and comments with templates and stickers.</p>
-            <h4>Owning the app and its backend</h4>
-            <p>Developed authentication, family roles and permissions, cross-device synchronization, and private photo/video access as the app moved from a local MVP to a server-backed service. I also built AI-assisted questions about care records and voice input. Iterated on real screens to fix duplicate controls, photo cropping, book spacing, and editing tools.</p>
+            <h4>From daily records to family memories</h4>
+            <p>Darin brings care logs, photos, and family memories into one workflow instead of scattering them across separate apps. Users can create photo diaries and growth books directly from everyday records.</p>
+            <h4>Owning the app and backend</h4>
+            <p>Built authentication, family roles and permissions, cross-device synchronization, private media access, voice input, and AI-assisted questions over care records as the product evolved from a local MVP into a server-backed application.</p>
             <h4>Maintainability and reliable saves</h4>
-            <p>Split a 1,713-line editor into smaller modules, leaving a 205-line core module. Replaced 1,071 hard-coded UI strings while maintaining parity across Korean, English, Japanese, Spanish, and Simplified Chinese.</p>
-            <p>Test cases cover preserving drafts when a save fails, blocking duplicate saves, retrying failed requests, and preventing delayed saves from clearing a newer draft after navigation or account changes.</p>
+            <p>Refactored a 1,713-line editor into modular components with a 205-line core module, and replaced 1,071 hard-coded UI strings while maintaining localization across five languages.</p>
+            <p>Added failure-path tests for draft preservation, duplicate-save prevention, request retries, and race conditions during navigation and account changes.</p>
             <h4>Current release scope</h4>
-            <p>iOS 1.0.0 (36) was delivered to internal TestFlight testers on October 13, 2026. An external TestFlight invitation is also available through the button above; accessible builds depend on the tester group. Device validation of synchronization, widgets, and video quality is still in progress. HDR handling remains undecided pending device comparisons.</p>
+            <p>Darin is currently distributed through TestFlight for real-device testing and iterative product feedback. I continue to validate synchronization, media handling, and mobile reliability across devices.</p>
           </details>
           <p class="stack">TypeScript · React Native · Supabase · PostgreSQL · Python · Voice input · Localization</p>
           <p class="project-status">iOS beta · Improving through real-use feedback · Source code is private</p>
+        </div>
+      </article>
+      <article class="project-row" aria-labelledby="watchdawg-title">
+        <div>
+          <h3 id="watchdawg-title">WatchDawg Crime Analytics</h3>
+          <p class="project-label">UW · Team project<br>Sep–Dec 2025</p>
+        </div>
+        <div>
+          <p class="project-copy">Built Python and SQL workflows over 900K+ Seattle public-safety records and delivered an interactive Dash application with geospatial views, time-series analysis, and location- and incident-level filtering.</p>
+          <p class="project-copy">Optimized the hosted application with SQLite date-range queries and compact data types to reduce memory usage and keep interactive filtering responsive.</p>
+          <div class="project-links"><a class="text-link" href="https://github.com/whwan4570/Watchdawg_app" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data" target="_blank" rel="noopener noreferrer">Data <span aria-hidden="true">↗</span></a></div>
+          <p class="stack">Python · SQL · Dash · Plotly · SQLite</p>
         </div>
       </article>
       <article class="project-row" aria-labelledby="ey-title">
@@ -304,103 +314,62 @@
         </div>
         <div>
           <p class="project-copy">Integrated and validated 9,319 water-quality observations with 205 satellite, climate, hydrology, and geospatial features to predict alkalinity, electrical conductance, and dissolved reactive phosphorus in South African rivers.</p>
-          <p class="project-copy"><strong>My work:</strong> feature engineering, spatial cross-validation, and multi-stage modeling, with particular attention to the difficult phosphorus target.</p>
-          <p class="result"><strong>Final leaderboard R²: 0.4259 · Rank: 66 · 3,000+ participants</strong></p>
+          <p class="project-copy"><strong>My work:</strong> engineered geospatial and environmental features, designed spatial cross-validation, and evaluated multi-stage ML models across three water-quality targets.</p>
+          <p class="result"><strong>Ranked 66th among 3,000+ participants · Final leaderboard R² 0.4259</strong></p>
           <details class="model-notes">
-            <summary>What I learned from the experiments</summary>
-            <p>Changes to the phosphorus prediction distribution moved the leaderboard score more than increasing model complexity. Spatial cross-validation and leaderboard results did not always agree. These observations came from competition feedback; they do not establish performance on a separate unseen dataset.</p>
+            <summary>Evaluation insight</summary>
+            <p>Spatial cross-validation exposed meaningful differences between local validation and leaderboard performance, especially for dissolved reactive phosphorus. The project reinforced the importance of evaluation design for geographically structured data.</p>
           </details>
           <div class="project-links"><a class="text-link" href="https://github.com/whwan4570/EY2026-Optimizing-Clean-Water-Supply" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/wonjoon-hwang-0496ba277/details/projects/" target="_blank" rel="noopener noreferrer">Project notes on LinkedIn <span aria-hidden="true">↗</span></a></div>
           <p class="stack">Python · Spatial CV · Landsat · TerraClimate · ERA5 · HydroRIVERS</p>
         </div>
       </article>
-      <article class="project-row" aria-labelledby="watchdawg-title">
-        <div>
-          <h3 id="watchdawg-title">WatchDawg Crime Analytics</h3>
-          <p class="project-label">UW · Team project<br>Sep–Dec 2025</p>
-        </div>
-        <div>
-          <p class="project-copy">Python and SQL workflows turn Seattle public-safety records into a Dash dashboard with geospatial views, time-series charts, and filters by location and incident type.</p>
-          <p class="project-copy">The public implementation uses SQLite date-range queries and compact data types to keep memory usage manageable on a hosted dashboard.</p>
-          <div class="project-links"><a class="text-link" href="https://github.com/whwan4570/Watchdawg_app" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="text-link" href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data" target="_blank" rel="noopener noreferrer">Data <span aria-hidden="true">↗</span></a></div>
-          <p class="stack">Python · SQL · Dash · Plotly · SQLite</p>
-        </div>
-      </article>
       <details class="more-projects">
         <summary>More projects</summary>
-        <article class="project-row" aria-labelledby="imbalance-title">
-          <div>
-            <h3 id="imbalance-title">Class Imbalance in Image Data</h3>
-            <p class="project-label">UGA · Team study · 2024</p>
-          </div>
-          <div>
-            <p class="project-copy">We compared interpolation, Gaussian Pyramid, SRCNN, and wavelet resampling across GoogLeNet, ResNet50, AlexNet, and VGG16 on a seven-category sports-image dataset.</p>
-            <p class="project-copy"><strong>My work:</strong> experimental setup, data preprocessing, and SRCNN implementation. I also analyzed the results and helped draft and organize the paper.</p>
-            <p class="result">SRCNN increased validation accuracy for AlexNet and VGG16 in our five-epoch experiments; GoogLeNet and ResNet50 did not improve.</p>
-            <details class="model-notes">
-              <summary>SRCNN validation results</summary>
-              <table class="results-table">
-                <caption>Figure 9 in the paper · 80/20 training–validation split · 5 epochs. Changes are percentage points (pp).</caption>
-                <thead><tr><th scope="col">Model</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Δ (pp)</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">GoogLeNet</th><td>90.28%</td><td>87.29%</td><td>−2.99</td></tr>
-                  <tr><th scope="row">ResNet50</th><td>81.35%</td><td>80.77%</td><td>−0.58</td></tr>
-                  <tr><th scope="row">AlexNet</th><td>18.47%</td><td>50.71%</td><td>+32.24</td></tr>
-                  <tr><th scope="row">VGG16</th><td>17.44%</td><td>40.52%</td><td>+23.08</td></tr>
-                </tbody>
-              </table>
-              <p>These are the validation results in Figure 9, rather than test-set accuracy. The short training budget limits what the comparison says about fully trained models.</p>
-            </details>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/whwan4570/Addressing-Class-Imbalance-in-Image-Data" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="https://raw.githubusercontent.com/whwan4570/Addressing-Class-Imbalance-in-Image-Data/main/Final%20paper.pdf" target="_blank" rel="noopener noreferrer">Read paper (PDF) <span aria-hidden="true">↗</span></a>
-            </div>
-            <p class="stack">Computer vision · CNNs · SRCNN · Image resampling</p>
-          </div>
-        </article>
         <ul class="more-list">
-          <li><h4>NFL model benchmarking</h4><p>Compared equivalent two-layer GRU encoder–decoder models in PyTorch and TensorFlow, focusing on divergence during autoregressive inference. <a href="https://github.com/whwan4570/NFL-Prediction-Model-Comparison" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
-          <li><h4>Smart Skincare Recommendation</h4><p>Ingredient-based product scoring using skin profiles. I worked on weighting overlapping ingredient benefits. <a href="https://github.com/JungmoonHa/Data515_SmartSkincare" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="https://jungmoonha.github.io/Data515_SmartSkincare/smart_skincare/templates/index.html" target="_blank" rel="noopener noreferrer">Demo ↗</a></p></li>
-          <li><h4>Best Artworks of All Time</h4><p>Artist classification using custom CNNs and transfer learning in TensorFlow and Keras. <a href="https://github.com/whwan4570/Deeplearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
-          <li><h4>Housing Market Modeling</h4><p>Used PCA to compare housing and macroeconomic signals across the 2007 and 2020 periods. <a href="https://github.com/whwan4570/2020CoronaHousingBubblevs.2007SubprimeMortgageCrisis" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
-          <li><h4>Traits &amp; Tastes</h4><p>A React and MySQL application for preference-based recommendations. I contributed to the database and project report. <a href="https://github.com/whwan4570/Traits_Tastes" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
+          <li><h4 id="imbalance-title">Class Imbalance in Image Data</h4><p>Compared interpolation and super-resolution resampling techniques across four CNN architectures on an imbalanced sports-image dataset. Implemented SRCNN preprocessing and contributed to experimental analysis and the final paper. <a href="https://github.com/whwan4570/Addressing-Class-Imbalance-in-Image-Data" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="https://raw.githubusercontent.com/whwan4570/Addressing-Class-Imbalance-in-Image-Data/main/Final%20paper.pdf" target="_blank" rel="noopener noreferrer">Read paper (PDF) ↗</a></p></li>
+          <li><h4>NFL model benchmarking</h4><p>Benchmarked equivalent GRU encoder–decoder models in PyTorch and TensorFlow for sequential player-position forecasting. <a href="https://github.com/whwan4570/NFL-Prediction-Model-Comparison" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
+          <li><h4>Smart Skincare Recommendation</h4><p>Contributed benefit weighting and product-ingredient overlap scoring to ingredient-based product matching using skin profiles. <a href="https://github.com/JungmoonHa/Data515_SmartSkincare" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="https://jungmoonha.github.io/Data515_SmartSkincare/smart_skincare/templates/index.html" target="_blank" rel="noopener noreferrer">Demo ↗</a></p></li>
+          <li><h4>Best Artworks of All Time</h4><p>Compared custom CNNs and transfer learning for artist classification in TensorFlow/Keras. <a href="https://github.com/whwan4570/Deeplearning" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
+          <li><h4>Housing Market Modeling</h4><p>Used PCA to compare housing-market and macroeconomic structure across the 2007 financial crisis and 2020 pandemic period. <a href="https://github.com/whwan4570/2020CoronaHousingBubblevs.2007SubprimeMortgageCrisis" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
+          <li><h4>Traits &amp; Tastes</h4><p>Built database components for a React/MySQL recommendation application based on user preferences. <a href="https://github.com/whwan4570/Traits_Tastes" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p></li>
         </ul>
       </details>
     </section>
     <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="section-title"><h2 id="experience-title">Experience</h2><p>Data engineering, research, and data quality.</p></div>
+      <div class="section-title"><h2 id="experience-title">Experience</h2><p>Data engineering, applied research, and production data quality.</p></div>
       <div class="experience-list">
         <article class="experience-row">
           <div><h3>University of Washington</h3><p class="dates">Oct 2026–Present · Seattle</p></div>
-          <div><h4 class="role">Research Intern · SEAL</h4><p class="experience-copy">Reviewing project materials, investigating technical issues, and contributing to early-stage research validation at the Sensors, Energy, and Automation Laboratory.</p></div>
+          <div><h4 class="role">Research Intern · SEAL</h4><p class="experience-copy">Supporting early-stage research at the Sensors, Energy, and Automation Laboratory through technical investigation, project review, and experimental validation.</p></div>
         </article>
         <article class="experience-row">
-          <div><h3>Databricks</h3><p class="dates">Jun 2026–Present</p></div>
-          <div><h4 class="role">Student Fellow</h4><p class="experience-copy">Build end-to-end Python, SQL, Spark, and Databricks workflows for ingestion, transformation, validation, analytics, and ML. Develop reusable technical demos of lakehouse and data-engineering workflows for mixed technical audiences. Selected after our 1st-place UW hackathon finish; presented TerraCast at the Data + AI Summit.</p></div>
+          <div><h3>Databricks Student Fellows Program</h3><p class="dates">Jun 2026–Present</p></div>
+          <div><h4 class="role">Student Fellow · Selected fellowship program</h4><p class="experience-copy">Selected as a Databricks Student Fellow after a first-place finish at the Databricks × UW Hackathon. Build and present end-to-end Python, SQL, Spark, and Databricks workflows spanning ingestion, transformation, validation, analytics, and ML for technical and mixed audiences. Presented TerraCast at the Data + AI Summit 2026.</p></div>
         </article>
         <article class="experience-row">
           <div><h3>Translation Commons</h3><p class="dates">Jun–Sep 2026 · Remote</p></div>
-          <div><h4 class="role">Volunteer Data Engineer</h4><p class="experience-copy">Shipped 21 production fixes across 9 language groups, correcting parent–child relationships in shared language data. Built a scope-validation tool that detected 95 hierarchy inconsistencies, and added 9 unit tests for parent-override behavior and issue detection.</p></div>
+          <div><h4 class="role">Volunteer Data Engineer</h4><p class="experience-copy">Shipped 21 production data fixes across nine language groups, correcting parent–child relationships in shared language datasets. Built a validation tool that surfaced 95 hierarchy inconsistencies and added nine unit tests covering override behavior and issue detection.</p></div>
         </article>
         <article class="experience-row">
           <div><h3>University of Georgia</h3><p class="dates">Sep 2023–Jan 2024</p></div>
-          <div><h4 class="role">Research Assistant · Federated &amp; Distributed ML</h4><p class="experience-copy">Implemented and evaluated FedSVD and FedPower in Python and TensorFlow across clients with non-IID data. Compared convergence, accuracy, and communication/computation trade-offs against centralized and baseline methods.</p></div>
+          <div><h4 class="role">Research Assistant · Federated &amp; Distributed ML</h4><p class="experience-copy">Implemented and evaluated FedSVD and FedPower across non-IID federated clients using Python and TensorFlow, analyzing convergence, accuracy, and communication/computation trade-offs against centralized baselines.</p></div>
         </article>
       </div>
     </section>
     <section class="section about" id="about" aria-labelledby="about-title">
       <h2 id="about-title">A little more about me.</h2>
       <div>
-        <p class="about-copy">I’m based in Seattle and completing my M.S. in Data Science at UW. My work includes distributed ML research, production language-data fixes, and geospatial modeling. I also founded Darin and built its iOS app and backend, connecting daily care records with family diaries and growth books.</p>
+        <p class="about-copy">I’m a data science graduate student at the University of Washington with interests spanning data engineering, machine learning, and production software. My experience ranges from distributed ML research and production data-quality work to geospatial modeling and building Darin, an iOS application and backend I developed from the ground up.</p>
         <ul class="education">
           <li><h3>University of Washington</h3><p>M.S. Data Science · Sep 2025–Mar 2027 (expected) · GPA 3.86</p></li>
-          <li><h3>University of Georgia</h3><p>B.S. Data Science · Aug 2022–May 2025<br>Minors in Statistics and Computer Science</p></li>
+          <li><h3>University of Georgia</h3><p>B.S. Data Science · Minors in Statistics &amp; Computer Science<br>Aug 2022–May 2025</p></li>
         </ul>
         <div class="tools">
-          <div><h3>Modeling</h3><p>PyTorch, TensorFlow, XGBoost, LightGBM</p></div>
-          <div><h3>Data engineering</h3><p>Python, SQL, Spark, Databricks, Pandas</p></div>
-          <div><h3>Visualization</h3><p>Plotly, Dash, Tableau</p></div>
-          <div><h3>Software &amp; databases</h3><p>TypeScript, PostgreSQL, MySQL, DuckDB, Git</p></div>
+          <div><h3>Data Engineering</h3><p>Python · SQL · Spark · Databricks · Pandas</p></div>
+          <div><h3>Machine Learning</h3><p>scikit-learn · PyTorch · TensorFlow · LightGBM · XGBoost · MLflow</p></div>
+          <div><h3>Software &amp; Data Systems</h3><p>TypeScript · React Native · PostgreSQL · MySQL · DuckDB · Git</p></div>
+          <div><h3>Visualization</h3><p>Plotly · Dash</p></div>
         </div>
       </div>
     </section>
@@ -408,7 +377,7 @@
   <footer class="contact" id="contact">
     <div class="wrap">
       <div class="contact-top">
-        <div><h2>Let’s talk.</h2><p class="contact-note">Open to 2027 new-grad Data Engineering and Machine Learning roles. Based in Seattle and open to relocation. Available after graduation in March 2027.</p></div>
+        <div><h2>Let’s talk.</h2><p class="contact-note">I’m seeking 2027 new-grad opportunities in Data Engineering, Machine Learning, and Applied AI. I’m based in Seattle, open to relocation across the U.S., and available after completing my M.S. in March 2027.</p></div>
         <div class="contact-address">
           <a class="email-link" href="mailto:wjhwang0503@gmail.com">wjhwang0503@gmail.com <span aria-hidden="true">↗</span></a>
           <div class="email-tools"><button class="copy-button" id="copy-email" type="button" hidden>Copy email</button><span class="copy-status" id="copy-status" role="status" aria-live="polite"></span></div>
