@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640" role="img" aria-labelledby="title desc">
+  <title id="title">TerraCast data and evaluation workflow</title>
+  <desc id="desc">Crop, weather, and climate data enter a Databricks pipeline and yield models. Historical county-held-out CV and later walk-forward time CV are separate evaluations. Stored predictions and anomaly counts require a canonical rerun after an index-alignment fix.</desc>
+  <rect width="800" height="640" fill="#fffdf8"/>
+  <g font-family="Arial,Helvetica,sans-serif" fill="#252421">
+    <text x="48" y="64" font-size="13" letter-spacing="2" fill="#a13e20">TERRACAST</text>
+    <text x="48" y="108" font-size="30">From county records to yield models</text>
+    <g fill="#efebe3" stroke="#d9d5cb">
+      <rect x="48" y="148" width="220" height="70" rx="4"/>
+      <rect x="290" y="148" width="220" height="70" rx="4"/>
+      <rect x="532" y="148" width="220" height="70" rx="4"/>
+      <rect x="48" y="264" width="704" height="94" rx="4"/>
+      <rect x="48" y="402" width="340" height="94" rx="4"/>
+      <rect x="412" y="402" width="340" height="94" rx="4"/>
+    </g>
+    <g font-size="18" text-anchor="middle">
+      <text x="158" y="190">Crop yields</text>
+      <text x="400" y="190">Weather</text>
+      <text x="642" y="190">Climate</text>
+      <text x="400" y="302">Databricks · Python · SQL · Spark</text>
+      <text x="400" y="332" font-size="14" fill="#65625d">Ingestion → validation → features → yield modeling</text>
+      <text x="218" y="440">Historical county-held-out CV</text>
+      <text x="218" y="470" font-size="14" fill="#65625d">5 folds · LightGBM + Random Forest</text>
+      <text x="582" y="440">Later walk-forward time CV</text>
+      <text x="582" y="470" font-size="14" fill="#65625d">Separate evaluation</text>
+    </g>
+    <path d="M158 218v22h242v24m242-46v22H400m0-22v46M400 358v22H218v22m182-22h182v22" fill="none" stroke="#a13e20" stroke-width="2"/>
+    <path d="M48 534h704" stroke="#d9d5cb"/>
+    <text x="48" y="566" font-size="15">Evaluation audit · October 2026</text>
+    <text x="48" y="593" font-size="14" fill="#65625d">Prediction storage and anomaly counts await a canonical rerun.</text>
+  </g>
+</svg>
