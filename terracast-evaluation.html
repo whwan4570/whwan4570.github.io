@@ -45,7 +45,7 @@
     <section aria-labelledby="audit-title">
       <h2 id="audit-title">Evaluation audit — October 2026</h2>
 <p>Historical MLflow runs recorded mean R² ≈ 0.8815 using county-held-out 5-fold cross-validation with a LightGBM/Random Forest ensemble. A previously displayed 0.6440 value was traced to a hard-coded dashboard constant and could not be tied to an evaluation run, so it is no longer reported as model performance.</p>
-            <p>A later audit also identified an index-alignment bug in the out-of-fold prediction writeback path. The bug affected stored predictions, residuals, and downstream anomaly counts, but not the fold-level CV arrays used to calculate R². As a result, the previously reported 31-anomaly / 0.45% figure has been withdrawn pending a canonical rerun.</p>
+            <p>A later audit also identified an index-alignment bug in the out-of-fold prediction writeback path. The bug affected stored predictions, residuals, and downstream anomaly counts, but not the fold-level CV arrays used to calculate R². After the fix, a canonical rerun regenerated the stored predictions and residuals and confirmed 31 anomalous county-years (0.45% of observations).</p>
             <p>A later walk-forward time-CV run recorded mean R² ≈ 0.8483; it is a separate evaluation and is not combined with the historical county-CV result.</p>
             <p>Presented TerraCast to Corteva representatives at the Data + AI Summit 2026.</p>
     </section>
